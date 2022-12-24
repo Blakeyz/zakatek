@@ -1,181 +1,183 @@
 .header {
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  box-shadow: 0px 0px 15px 1px black;
-  position: fixed;
-  z-index: 2;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	box-shadow: 0px 0px 15px 1px black;
+	position: fixed;
+	z-index: 2;
 }
 .menupc {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  font-size: 1rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 1rem;
 }
 .menupc img,
-.logomobile img {
-  height: 50px;
+.logomobile {
+	max-height: 50px;
 }
 .logomobile {
-  padding: 5px;
-  display: none;
+	display: none;
+	margin-left: 5px;
+	max-width: calc(100vw - 70px);
 }
 .menupc ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
 }
 .menupc ul li {
-  width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .menupc ul li a {
-  padding: 5px 10px;
-  position: relative;
+	padding: 5px 10px;
+	position: relative;
 }
 .menupc ul li a::before,
 .sidemenu ul a li::before {
-  content: " ";
-  height: 3px;
-  background: linear-gradient(to right, rgb(211, 146, 108), rgb(168, 91, 46));
-  position: absolute;
-  width: 0;
-  left: 50%;
-  bottom: 0;
-  transition: 0.5s all ease;
+	content: " ";
+	height: 3px;
+	background: linear-gradient(to right, rgb(211, 146, 108), rgb(168, 91, 46));
+	position: absolute;
+	width: 0;
+	left: 50%;
+	bottom: 0;
+	transition: 0.5s all ease;
 }
-.menupc ul li a:hover:before {
-  left: 0;
-  width: 100%;
+.menupc ul li a:hover:before,
+.sidemenu ul a li:hover::before {
+	left: 0;
+	width: 100%;
 }
 .menupc ul,
 .sidemenu ul {
-  list-style: none;
-  font-family: Arial, Helvetica, sans-serif;
+	list-style: none;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .menupc ul a,
 .sidemenu ul a {
-  color: black;
-  text-decoration: none;
+	color: black;
+	text-decoration: none;
 }
 .menumobile,
 .sidemenu {
-  display: none;
+	display: none;
 }
 .menumobile {
-  width: 60px;
+	width: 60px;
 }
 .menumobile {
-  justify-self: flex-end;
+	justify-self: flex-end;
 }
 
 .menu {
-  padding: 10px;
-  display: inline-block;
-  cursor: pointer;
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  z-index: 2;
+	padding: 10px;
+	display: inline-block;
+	cursor: pointer;
+	background-color: transparent;
+	border: 0;
+	margin: 0;
+	z-index: 2;
 }
 .sidemenu,
 .menu {
-  transition: 0.5s all ease;
+	transition: 0.5s all ease;
 }
 
 .menu-box {
-  width: 40px;
-  height: 24px;
-  display: inline-block;
-  position: relative;
+	width: 40px;
+	height: 24px;
+	display: inline-block;
+	position: relative;
 }
 
 .menu-bars,
 .menu-bars::after,
 .menu-bars::before {
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(to right, rgb(211, 146, 108), rgb(168, 91, 46));
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transition: 0.4s transform ease, 0.2s background-color ease;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(to right, rgb(211, 146, 108), rgb(168, 91, 46));
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transition: 0.4s transform ease, 0.2s background-color ease;
 }
 .menu-bars {
-  transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 .sidemenu {
-  top: 60px;
-  width: 100%;
-  right: -100vw;
-  position: fixed;
-  background-color: rgba(245, 245, 245, 0.8);
-  z-index: 1;
+	top: 60px;
+	width: 100%;
+	right: -100vw;
+	position: fixed;
+	background-color: rgba(245, 245, 245, 0.8);
+	z-index: 1;
 }
 .sidemenu ul a:hover > li {
-  box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.9);
-  font-size: 2rem;
+	font-size: 2rem;
 }
 .sidemenu ul a li {
-  line-height: 4rem;
-  text-align: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.514);
-  font-size: 1.7rem;
-  transition: 0.3s all ease;
+	line-height: 4rem;
+	text-align: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.514);
+	font-size: 1.7rem;
+	transition: 0.3s all ease;
+	position: relative;
 }
 .sidemenu ul a:last-child > li {
-  border-bottom: unset;
+	border-bottom: unset;
 }
 .menu-bars::after,
 .menu-bars::before {
-  content: "";
+	content: "";
 }
 .menu-bars::before {
-  top: -10px;
+	top: -10px;
 }
 .menu-bars::after {
-  top: 10px;
+	top: 10px;
 }
 .menu--opened .menu-bars {
-  background: transparent;
+	background: transparent;
 }
 
 .menu--opened .menu-bars:before {
-  transform: translateY(10px) rotate(45deg);
+	transform: translateY(10px) rotate(45deg);
 }
 
 .menu--opened .menu-bars:after {
-  transform: translateY(-10px) rotate(-45deg);
+	transform: translateY(-10px) rotate(-45deg);
 }
 @media only screen and (max-width: 768px) {
-  .menupc ul {
-    width: 100%;
-  }
+	.menupc ul {
+		width: 100%;
+	}
 }
 @media only screen and (max-width: 520px) {
-  .menumobile {
-    display: block;
-  }
-  .sidemenu {
-    display: block;
-  }
-  .side--opened {
-    transform: translateX(-100vw);
-  }
-  .menupc {
-    display: none;
-  }
-  .header {
-    justify-content: space-between;
-  }
-  .logomobile {
-    display: block;
-  }
+	.menumobile {
+		display: block;
+	}
+	.sidemenu {
+		display: block;
+	}
+	.side--opened {
+		transform: translateX(-100vw);
+	}
+	.menupc {
+		display: none;
+	}
+	.header {
+		justify-content: space-between;
+	}
+	.logomobile {
+		display: block;
+	}
 }
