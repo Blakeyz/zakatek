@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Caramel&family=Raleway:wght@400;700&display=swap");
 .header {
 	height: 60px;
 	display: flex;
@@ -14,7 +15,7 @@
 	justify-content: center;
 	align-items: center;
 	text-transform: uppercase;
-	font-size: 1rem;
+	font-size: 1.1rem;
 }
 .menupc img,
 .logomobile {
@@ -45,7 +46,7 @@
 .sidemenu ul a li::before {
 	content: " ";
 	height: 3px;
-	background: linear-gradient(to right, rgb(211, 146, 108), rgb(168, 91, 46));
+	background: linear-gradient(to right, #eacabf, #a27067);
 	position: absolute;
 	width: 0;
 	left: 50%;
@@ -60,7 +61,7 @@
 .menupc ul,
 .sidemenu ul {
 	list-style: none;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Raleway", sans-serif;
 }
 .menupc ul a,
 .sidemenu ul a {
@@ -104,7 +105,7 @@
 .menu-bars::before {
 	width: 100%;
 	height: 3px;
-	background: linear-gradient(to right, rgb(211, 146, 108), rgb(168, 91, 46));
+	background: linear-gradient(to right, #eacabf, #a27067);
 	position: absolute;
 	left: 0;
 	top: 50%;
@@ -117,24 +118,28 @@
 	top: 60px;
 	width: 100%;
 	right: -100vw;
+	height: 100%;
 	position: fixed;
-	background-color: rgba(245, 245, 245, 0.8);
+	background: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.8),
+		transparent
+	);
 	z-index: 1;
+	text-transform: uppercase;
 }
 .sidemenu ul a:hover > li {
-	font-size: 2rem;
+	font-size: 1.75rem;
 }
 .sidemenu ul a li {
 	line-height: 4rem;
 	text-align: center;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.514);
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	transition: 0.3s all ease;
 	position: relative;
 }
-.sidemenu ul a:last-child > li {
-	border-bottom: unset;
-}
+
 .menu-bars::after,
 .menu-bars::before {
 	content: "";
