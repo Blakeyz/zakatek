@@ -307,7 +307,7 @@
   text-transform: capitalize;
   font-weight: 400;
   white-space: nowrap;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -358,7 +358,7 @@
   text-decoration: underline;
 }
 .content .boxcontent .box .box-roll li:last-child {
-  padding-bottom: 0.5vh;
+  padding-bottom: 1vh;
 }
 .content .person {
   width: 70%;
@@ -448,10 +448,10 @@
     font-size: 2vw;
   }
   .content .boxcontent .box .box-roll a {
-    font-size: 3vw;
+    font-size: 2.2vw;
   }
   .content .boxcontent .box .box-roll li {
-    font-size: 2vw;
+    font-size: 2.2vw;
   }
   .content .person {
     flex-direction: column;
@@ -494,17 +494,17 @@
     display: block;
   }
   .content .boxcontent .box {
-    width: 60vw;
-    height: 60vw;
+    width: 75vw;
+    height: 75vw;
   }
   .content .boxcontent .box .box-footer h1 {
     font-size: 4vw;
   }
   .content .boxcontent .box .box-roll a {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .content .boxcontent .box .box-roll li {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .footer {
     font-size: 4vw;
