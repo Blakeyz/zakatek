@@ -277,9 +277,11 @@
 }
 .content .boxcontent .box .box-img {
   height: 90%;
+  width: 100%;
 }
 .content .boxcontent .box .box-img img {
   height: 100%;
+  width: 100%;
   filter: grayscale(1);
 }
 .content .boxcontent .box .box-footer {
