@@ -103,7 +103,7 @@
   height: 100%;
   position: fixed;
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), transparent);
-  z-index: 1;
+  z-index: 5;
   text-transform: uppercase;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
@@ -445,7 +445,7 @@
     height: 40vw;
   }
   .content .boxcontent .box .box-footer h1 {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
   .content .boxcontent .box .box-roll a {
     font-size: 2.2vw;
