@@ -414,6 +414,33 @@
   text-align: center;
   font-size: 1.2rem;
 }
+.content .service {
+  width: 70%;
+  background-color: white;
+  border: 1px solid black;
+  padding: 1.8rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .service h1 {
+  font-size: 2.2vw;
+  font-weight: 200;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: white;
+  position: absolute;
+  top: -1.4vw;
+  padding: 0 0.5rem;
+  border: 1px solid black;
+  background: linear-gradient(to right bottom, rgb(247, 217, 207), rgb(255, 199, 189));
+}
+.content .service p {
+  text-align: center;
+  font-size: 1.2vw;
+}
 
 .footer {
   background-color: white;
@@ -472,6 +499,22 @@
   }
   .content .person .person-img img {
     max-width: 100%;
+  }
+  .content .service {
+    padding: 1rem;
+    width: 85%;
+  }
+  .content .service h1 {
+    width: 100%;
+    position: static;
+    text-align: center;
+    font-size: 4vw;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  .content .service p {
+    font-size: 3.5vw;
+    text-align: justify;
   }
 }
 @media only screen and (max-width: 520px) {
